@@ -8,7 +8,7 @@ import { ShieldCheck, Flame, Layers, Copy, Check, Info } from 'lucide-react';
 
 export default function Tokenomics() {
   const [copied, setCopied] = useState(false);
-  const contractAddress = '0x0000000000000000000000000';
+  const contractAddress = '0x4f974A456fd3b85a97f912E6dD91C89121b96982';
 
   const handleCopy = () => {
     navigator.clipboard.writeText(contractAddress);

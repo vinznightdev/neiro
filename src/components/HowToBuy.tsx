@@ -91,7 +91,7 @@ export default function HowToBuy() {
         <div className="text-xs space-y-1">
           <span className="font-black block">🚨 Important Security Reminder:</span>
           <p className="font-bold leading-relaxed">
-            Never share your wallet private keys or seed phrase with anyone. The NEIRO team will never message you first asking to validate your wallet. Always verify the contract address matches exactly: <code className="font-mono bg-amber-500/20 dark:bg-violet-600/30 px-1 py-0.5 rounded text-amber-950 dark:text-violet-200 select-all font-black">0x0000000000000000000000000</code>.
+            Never share your wallet private keys or seed phrase with anyone. The NEIRO team will never message you first asking to validate your wallet. Always verify the contract address matches exactly: <code className="font-mono bg-amber-500/20 dark:bg-violet-600/30 px-1 py-0.5 rounded text-amber-950 dark:text-violet-200 select-all font-black">0x4f974A456fd3b85a97f912E6dD91C89121b96982</code>.
           </p>
         </div>
       </div>
