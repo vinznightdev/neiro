@@ -150,10 +150,10 @@ export default function PuppySimulator() {
   }, [floatHearts]);
 
   return (
-    <div className="bg-white dark:bg-indigo-950/70 border border-orange-100 dark:border-indigo-900/40 rounded-3xl p-6 lg:p-8 shadow-sm flex flex-col xl:flex-row gap-8">
+    <div className="bg-white dark:bg-indigo-950/70 border border-orange-100 dark:border-indigo-900/40 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-sm flex flex-col xl:flex-row gap-8">
       
       {/* 1. Interactive Visual Panel */}
-      <div className="flex-1 flex flex-col items-center justify-center bg-orange-50/50 dark:bg-slate-950/75 rounded-2xl p-6 relative overflow-hidden min-h-[350px]">
+      <div className="flex-1 flex flex-col items-center justify-center bg-orange-50/50 dark:bg-slate-950/75 rounded-2xl p-4 sm:p-6 relative overflow-hidden min-h-[280px] sm:min-h-[350px]">
         
         {/* Sky / Floating Particles */}
         <div className="absolute inset-0 pointer-events-none">

@@ -277,7 +277,7 @@ export default function App() {
         </div>
 
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-orange-100/35 via-orange-50/20 to-transparent dark:from-indigo-950/55 dark:via-indigo-950/20 dark:to-transparent rounded-3xl p-6 sm:p-8 lg:p-12 border border-orange-100/40 dark:border-indigo-950/30 flex flex-col lg:flex-row gap-8 items-center">
+        <section className="bg-gradient-to-br from-orange-100/35 via-orange-50/20 to-transparent dark:from-indigo-950/55 dark:via-indigo-950/20 dark:to-transparent rounded-3xl p-4 sm:p-8 lg:p-12 border border-orange-100/40 dark:border-indigo-950/30 flex flex-col lg:flex-row gap-8 items-center">
           
           {/* Main Visual Frame */}
           <div className="lg:w-5/12 flex justify-center relative w-full">

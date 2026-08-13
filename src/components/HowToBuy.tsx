@@ -39,7 +39,7 @@ export default function HowToBuy() {
   ];
 
   return (
-    <div className="bg-white dark:bg-indigo-950/70 border border-orange-100 dark:border-indigo-900/40 rounded-3xl p-6 lg:p-8 shadow-sm space-y-6">
+    <div className="bg-white dark:bg-indigo-950/70 border border-orange-100 dark:border-indigo-900/40 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-sm space-y-6">
       {/* Title */}
       <div>
         <div className="flex items-center gap-2">

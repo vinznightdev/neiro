@@ -248,10 +248,10 @@ export default function InteractiveGallery() {
               exit={{ scale: 0.95, y: 15 }}
               transition={{ type: 'spring', damping: 25, stiffness: 220 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-2xl max-w-4xl w-full max-h-[90vh] flex flex-col md:flex-row border border-slate-100 dark:border-slate-800"
+              className="bg-white dark:bg-slate-900 rounded-3xl overflow-y-auto md:overflow-hidden shadow-2xl max-w-4xl w-full max-h-[95vh] md:max-h-[90vh] flex flex-col md:flex-row border border-slate-100 dark:border-slate-800"
             >
               {/* Media Column */}
-              <div className="relative md:w-3/5 bg-slate-950 flex items-center justify-center min-h-[300px] md:min-h-0">
+              <div className="relative md:w-3/5 bg-slate-950 flex items-center justify-center min-h-[220px] md:min-h-0 shrink-0">
                 <img
                   src={activePhoto.url}
                   alt={activePhoto.title}
@@ -290,7 +290,7 @@ export default function InteractiveGallery() {
               </div>
 
               {/* Interaction Details Column */}
-              <div className="md:w-2/5 p-6 flex flex-col justify-between max-h-[40vh] md:max-h-none overflow-y-auto bg-orange-50/25 dark:bg-slate-900">
+              <div className="md:w-2/5 p-5 md:p-6 flex flex-col justify-between bg-orange-50/25 dark:bg-slate-900 flex-1">
                 {/* Header */}
                 <div className="space-y-3">
                   <div className="flex justify-between items-start">
