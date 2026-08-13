@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+html {
+  font-size: 105%;
+  letter-spacing: 0.02em;
+}
+

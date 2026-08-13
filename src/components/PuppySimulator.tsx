@@ -610,11 +610,11 @@ export default function PuppySimulator() {
       {/* 2. Control Panel */}
       <div className="flex-1 flex flex-col justify-between space-y-6">
         <div>
-          <h3 className="text-xl font-extrabold text-slate-800 dark:text-slate-100 flex items-center gap-2">
+          <h3 className="text-xl font-extrabold text-slate-900 dark:text-slate-50 flex items-center gap-2">
             <span>Care & Dress Up Studio</span>
             <Sparkles className="w-5 h-5 text-amber-500 animate-pulse" />
           </h3>
-          <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
+          <p className="text-sm text-slate-800 dark:text-indigo-150 font-semibold mt-1">
             Feed, pet, or dress up your digital puppy to keep him styling and happy!
           </p>
         </div>
@@ -623,7 +623,7 @@ export default function PuppySimulator() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           {/* Happiness */}
           <div className="bg-orange-50/45 dark:bg-indigo-950/20 p-3 rounded-2xl border border-orange-100/50 dark:border-indigo-900/20">
-            <div className="flex justify-between items-center text-xs mb-1.5 font-bold text-slate-500 dark:text-slate-400">
+            <div className="flex justify-between items-center text-xs mb-1.5 font-black text-slate-800 dark:text-indigo-100">
               <span className="flex items-center gap-1">💖 Love</span>
               <span>{pet.happiness}%</span>
             </div>
@@ -637,7 +637,7 @@ export default function PuppySimulator() {
 
           {/* Hunger */}
           <div className="bg-orange-50/45 dark:bg-indigo-950/20 p-3 rounded-2xl border border-orange-100/50 dark:border-indigo-900/20">
-            <div className="flex justify-between items-center text-xs mb-1.5 font-bold text-slate-500 dark:text-slate-400">
+            <div className="flex justify-between items-center text-xs mb-1.5 font-black text-slate-800 dark:text-indigo-100">
               <span className="flex items-center gap-1">🍪 Full</span>
               <span>{100 - pet.hunger}%</span>
             </div>
@@ -651,7 +651,7 @@ export default function PuppySimulator() {
 
           {/* Energy */}
           <div className="bg-orange-50/45 dark:bg-indigo-950/20 p-3 rounded-2xl border border-orange-100/50 dark:border-indigo-900/20">
-            <div className="flex justify-between items-center text-xs mb-1.5 font-bold text-slate-500 dark:text-slate-400">
+            <div className="flex justify-between items-center text-xs mb-1.5 font-black text-slate-800 dark:text-indigo-100">
               <span className="flex items-center gap-1">⚡ Energy</span>
               <span>{pet.energy}%</span>
             </div>
@@ -666,7 +666,7 @@ export default function PuppySimulator() {
 
         {/* Action Buttons */}
         <div className="space-y-2.5">
-          <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">
+          <h4 className="text-xs font-black uppercase tracking-wider text-slate-800 dark:text-indigo-200">
             Take Action
           </h4>
           <div className="flex flex-wrap gap-2.5">
@@ -704,7 +704,7 @@ export default function PuppySimulator() {
 
         {/* Teach Neiro a Meme Trick */}
         <div className="space-y-2.5">
-          <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">
+          <h4 className="text-xs font-black uppercase tracking-wider text-slate-850 dark:text-indigo-200">
             Teach Neiro a Meme Trick!
           </h4>
           <div className="flex flex-wrap gap-2.5">
@@ -759,7 +759,7 @@ export default function PuppySimulator() {
         <div className="space-y-4 pt-4 border-t border-orange-50 dark:border-indigo-950/40">
           {/* Hoodie Color Selector */}
           <div className="space-y-2">
-            <label className="text-xs font-bold uppercase tracking-wider text-slate-400">
+            <label className="text-xs font-black uppercase tracking-wider text-slate-850 dark:text-indigo-200">
               Hoodie Color Style
             </label>
             <div className="flex items-center gap-3">
@@ -785,7 +785,7 @@ export default function PuppySimulator() {
 
           {/* Hoodie Pattern Style Selector */}
           <div className="space-y-2">
-            <label className="text-xs font-bold uppercase tracking-wider text-slate-400">
+            <label className="text-xs font-black uppercase tracking-wider text-slate-850 dark:text-indigo-200">
               Jacket Style / Patterns
             </label>
             <div className="flex flex-wrap gap-2">
@@ -794,10 +794,10 @@ export default function PuppySimulator() {
                   key={style.id}
                   id={`hoodie-style-${style.id}`}
                   onClick={() => setHoodieStyle(style.id)}
-                  className={`px-3.5 py-2 rounded-xl text-xs font-semibold border transition-all cursor-pointer flex items-center gap-1.5 ${
+                  className={`px-3.5 py-2 rounded-xl text-xs font-bold border transition-all cursor-pointer flex items-center gap-1.5 ${
                     hoodieStyle === style.id
                       ? 'bg-amber-500 text-white border-amber-500 shadow-sm dark:bg-violet-600 dark:border-violet-600'
-                      : 'bg-white border-slate-200 text-slate-700 hover:border-amber-300 dark:bg-slate-900 dark:border-slate-800 dark:text-slate-300'
+                      : 'bg-white border-slate-300 text-slate-800 hover:border-amber-400 dark:bg-slate-900 dark:border-slate-800 dark:text-slate-200'
                   }`}
                   title={style.desc}
                 >
@@ -810,7 +810,7 @@ export default function PuppySimulator() {
 
           {/* Accessory Selector */}
           <div className="space-y-2">
-            <label className="text-xs font-bold uppercase tracking-wider text-slate-400">
+            <label className="text-xs font-black uppercase tracking-wider text-slate-850 dark:text-indigo-200">
               Accessories
             </label>
             <div className="flex flex-wrap gap-2">
@@ -819,10 +819,10 @@ export default function PuppySimulator() {
                   key={acc.id}
                   id={`accessory-${acc.id}`}
                   onClick={() => setPet((prev) => ({ ...prev, accessory: acc.id }))}
-                  className={`px-3.5 py-2 rounded-xl text-xs font-semibold border transition-all cursor-pointer flex items-center gap-1.5 ${
+                  className={`px-3.5 py-2 rounded-xl text-xs font-bold border transition-all cursor-pointer flex items-center gap-1.5 ${
                     pet.accessory === acc.id
                       ? 'bg-amber-500 text-white border-amber-500 shadow-sm dark:bg-violet-600 dark:border-violet-600'
-                      : 'bg-white border-slate-200 text-slate-700 hover:border-amber-300 dark:bg-slate-900 dark:border-slate-800 dark:text-slate-300'
+                      : 'bg-white border-slate-300 text-slate-800 hover:border-amber-400 dark:bg-slate-900 dark:border-slate-800 dark:text-slate-200'
                   }`}
                 >
                   <span>{acc.icon}</span>

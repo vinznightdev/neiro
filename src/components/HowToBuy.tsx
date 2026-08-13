@@ -44,11 +44,11 @@ export default function HowToBuy() {
       <div>
         <div className="flex items-center gap-2">
           <span className="text-2xl">🛒</span>
-          <h3 className="text-xl font-extrabold text-slate-800 dark:text-slate-100">
+          <h3 className="text-xl font-extrabold text-slate-900 dark:text-slate-50">
             How to Buy $NEIRO
           </h3>
         </div>
-        <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
+        <p className="text-xs sm:text-sm text-slate-800 dark:text-indigo-150 font-semibold mt-1">
           Follow this quick 4-step guide to secure your position in the street-built Neiro movement.
         </p>
       </div>
@@ -73,10 +73,10 @@ export default function HowToBuy() {
 
               {/* Title & Description */}
               <div className="space-y-1.5">
-                <h4 className="font-bold text-sm sm:text-base text-slate-800 dark:text-slate-100">
+                <h4 className="font-extrabold text-sm sm:text-base text-slate-900 dark:text-slate-50">
                   {step.title}
                 </h4>
-                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed pr-2">
+                <p className="text-xs text-slate-800 dark:text-indigo-150 font-medium leading-relaxed pr-2">
                   {step.desc}
                 </p>
               </div>
@@ -86,12 +86,12 @@ export default function HowToBuy() {
       </div>
 
       {/* Security Tip Box */}
-      <div className="flex items-start gap-3 bg-amber-500/10 text-amber-800 dark:bg-violet-600/10 dark:text-violet-300 p-4 rounded-2xl border border-amber-500/20 dark:border-violet-800/30">
+      <div className="flex items-start gap-3 bg-amber-500/10 text-amber-950 dark:bg-violet-600/10 dark:text-violet-200 p-4 rounded-2xl border border-amber-500/20 dark:border-violet-800/30">
         <HelpCircle className="w-5 h-5 shrink-0 mt-0.5" />
         <div className="text-xs space-y-1">
-          <span className="font-bold block">🚨 Important Security Reminder:</span>
-          <p className="opacity-90 leading-relaxed">
-            Never share your wallet private keys or seed phrase with anyone. The NEIRO team will never message you first asking to validate your wallet. Always verify the contract address matches exactly: <code className="font-mono bg-amber-500/20 dark:bg-violet-600/30 px-1 py-0.5 rounded text-amber-900 dark:text-violet-200 select-all">0x0000000000000000000000000</code>.
+          <span className="font-black block">🚨 Important Security Reminder:</span>
+          <p className="font-bold leading-relaxed">
+            Never share your wallet private keys or seed phrase with anyone. The NEIRO team will never message you first asking to validate your wallet. Always verify the contract address matches exactly: <code className="font-mono bg-amber-500/20 dark:bg-violet-600/30 px-1 py-0.5 rounded text-amber-950 dark:text-violet-200 select-all font-black">0x0000000000000000000000000</code>.
           </p>
         </div>
       </div>

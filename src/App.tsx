@@ -117,8 +117,8 @@ export default function App() {
   return (
     <div className={`min-h-screen relative transition-colors duration-700 ease-in-out font-sans overflow-x-hidden ${
       darkMode 
-        ? 'bg-[#0B0F19] text-indigo-100 selection:bg-violet-800/60 selection:text-white' 
-        : 'bg-[#FFFDF6] text-slate-800 selection:bg-amber-200/60 selection:text-slate-900'
+        ? 'bg-[#04060C] text-indigo-100 selection:bg-violet-800/60 selection:text-white' 
+        : 'bg-[#DED8BE] text-slate-900 selection:bg-amber-200/60 selection:text-slate-900'
     }`}>
       {/* Whimsical custom cursor effect */}
       <TailWaggingCursor />
@@ -319,7 +319,7 @@ export default function App() {
                   NEIRO
                 </span>
               </h1>
-              <p className="text-sm sm:text-base text-slate-500 dark:text-indigo-200/80 leading-relaxed max-w-xl">
+              <p className="text-sm sm:text-base text-slate-800 dark:text-indigo-100 font-medium leading-relaxed max-w-xl">
                 NEIRO represents the spirit of the streets—built on resilience, ambition, and community. From humble beginnings to a global stage, NEIRO is creating a movement driven by people who believe in building something bigger together. The journey is just beginning.
               </p>
             </div>
@@ -362,7 +362,7 @@ export default function App() {
               </div>
 
               {/* Mini Stats Column */}
-              <div className="flex gap-4 text-xs font-bold text-slate-400 pl-1">
+              <div className="flex gap-4 text-xs font-bold text-slate-750 dark:text-indigo-200 pl-1">
                 <div className="flex items-center gap-1.5">
                   <Heart className="w-4 h-4 text-pink-500 fill-current" />
                   <span>12K+ Believers</span>
@@ -430,7 +430,7 @@ export default function App() {
             <h2 className="text-2xl sm:text-3xl font-black text-slate-800 dark:text-slate-100">
               Community Gallery & Memes
             </h2>
-            <p className="text-xs sm:text-sm text-slate-400 dark:text-indigo-300/60 max-w-xl mx-auto">
+            <p className="text-xs sm:text-sm text-slate-850 dark:text-indigo-100 font-medium max-w-xl mx-auto">
               Browse through our officially shared street captures. Zoom in, vote on reviews, and spread the love-paws!
             </p>
           </div>
@@ -440,15 +440,15 @@ export default function App() {
         </section>
 
         {/* Footer Area */}
-        <footer className="pt-8 border-t border-orange-100/50 dark:border-indigo-950/40 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-slate-400 dark:text-indigo-300/40">
+        <footer className="pt-8 border-t border-orange-100/50 dark:border-indigo-950/40 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-semibold text-slate-750 dark:text-indigo-200">
           <div className="flex items-center gap-1.5">
             <span>Made with 🐾 and 🐕 for the best community on Robinhood Chain.</span>
           </div>
           <div className="flex items-center gap-4">
-            <a href="https://t.me/neirohaven" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500 font-extrabold transition-colors">Telegram</a>
-            <span className="opacity-20">•</span>
-            <a href="https://twitter.com/neirohaven" target="_blank" rel="noopener noreferrer" className="hover:text-slate-700 dark:hover:text-slate-200 font-extrabold transition-colors">Twitter</a>
-            <span className="opacity-20">•</span>
+            <a href="https://t.me/neirohaven" target="_blank" rel="noopener noreferrer" className="hover:text-sky-600 dark:hover:text-sky-400 font-extrabold transition-colors">Telegram</a>
+            <span className="opacity-40">•</span>
+            <a href="https://twitter.com/neirohaven" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 dark:hover:text-slate-100 font-extrabold transition-colors">Twitter</a>
+            <span className="opacity-40">•</span>
             <span>© 2026 NEIRO Haven • All Paws Reserved.</span>
           </div>
         </footer>

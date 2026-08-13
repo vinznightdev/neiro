@@ -49,11 +49,11 @@ export default function Tokenomics() {
       <div>
         <div className="flex items-center gap-2">
           <span className="text-2xl">📊</span>
-          <h3 className="text-xl font-extrabold text-slate-800 dark:text-slate-100">
+          <h3 className="text-xl font-extrabold text-slate-900 dark:text-slate-50">
             NEIRO Tokenomics
           </h3>
         </div>
-        <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
+        <p className="text-xs sm:text-sm text-slate-800 dark:text-indigo-150 font-semibold mt-1">
           Decentralized, fair, and community-owned on the high-efficiency Robinhood Chain.
         </p>
       </div>
@@ -66,12 +66,12 @@ export default function Tokenomics() {
             className="p-4 rounded-2xl bg-orange-50/30 dark:bg-slate-900/40 border border-orange-100/50 dark:border-slate-800 flex flex-col justify-between space-y-3"
           >
             <div className="flex justify-between items-start">
-              <span className="text-sm font-semibold text-slate-400 dark:text-slate-400">
+              <span className="text-xs font-bold text-slate-700 dark:text-indigo-200">
                 {stat.label}
               </span>
               <span className="text-xl">{stat.icon}</span>
             </div>
-            <div className="text-base sm:text-lg font-black text-slate-800 dark:text-slate-100">
+            <div className="text-base sm:text-lg font-black text-slate-900 dark:text-indigo-50">
               {stat.value}
             </div>
           </div>
@@ -81,11 +81,11 @@ export default function Tokenomics() {
       {/* Copy Contract Widget */}
       <div className="bg-gradient-to-r from-orange-50/50 to-amber-50/30 dark:from-slate-900/40 dark:to-indigo-950/20 p-4 rounded-2xl border border-orange-100/40 dark:border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="space-y-1">
-          <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-violet-400">
+          <div className="flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-amber-900 dark:text-violet-300">
             <ShieldCheck className="w-4 h-4" />
             <span>Official Contract Address</span>
           </div>
-          <p className="font-mono text-[11px] sm:text-xs text-slate-600 dark:text-slate-300 break-all select-all pr-2">
+          <p className="font-mono text-[11px] sm:text-xs text-slate-900 dark:text-indigo-100 font-bold break-all select-all pr-2">
             {contractAddress}
           </p>
         </div>
@@ -111,8 +111,8 @@ export default function Tokenomics() {
 
       {/* Community Resilience Disclaimer */}
       <div className="flex items-start gap-3 text-xs bg-orange-100/30 dark:bg-indigo-950/20 p-4.5 rounded-2xl border border-orange-100/20 dark:border-slate-800">
-        <Info className="w-5 h-5 text-amber-600 dark:text-violet-400 shrink-0 mt-0.5" />
-        <p className="text-slate-500 dark:text-indigo-200/60 leading-relaxed">
+        <Info className="w-5 h-5 text-amber-700 dark:text-violet-400 shrink-0 mt-0.5" />
+        <p className="text-slate-850 dark:text-indigo-100 font-medium leading-relaxed">
           NEIRO is built with a 100% fair launch mechanism. No presales, no developer tokens, and liquidity pool burned permanently. This project belongs strictly to the community, carrying forward the street-built legacy of resilience.
         </p>
       </div>

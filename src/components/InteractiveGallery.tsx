@@ -207,21 +207,21 @@ export default function InteractiveGallery() {
                 {/* Info Text */}
                 <div className="p-5 flex-1 flex flex-col justify-between">
                   <div className="space-y-1.5">
-                    <h3 className="font-bold text-lg text-slate-800 dark:text-slate-100 group-hover:text-amber-600 dark:group-hover:text-violet-400 transition-colors">
+                    <h3 className="font-extrabold text-lg text-slate-900 dark:text-slate-50 group-hover:text-amber-600 dark:group-hover:text-violet-400 transition-colors">
                       {photo.title}
                     </h3>
-                    <p className="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                    <p className="text-sm text-slate-800 dark:text-indigo-150 font-medium line-clamp-2">
                       {photo.description}
                     </p>
                   </div>
 
-                  <div className="flex items-center justify-between pt-4 mt-4 border-t border-orange-50 dark:border-indigo-950/40 text-xs font-medium text-slate-400">
+                  <div className="flex items-center justify-between pt-4 mt-4 border-t border-orange-50 dark:border-indigo-950/40 text-xs font-bold text-slate-750 dark:text-indigo-200">
                     <div className="flex items-center gap-1.5">
-                      <Heart className="w-3.5 h-3.5 text-red-400 fill-current" />
+                      <Heart className="w-3.5 h-3.5 text-red-500 fill-current" />
                       <span>{photo.likes} love-paws</span>
                     </div>
                     <div className="flex items-center gap-1.5">
-                      <MessageCircle className="w-3.5 h-3.5 text-sky-400" />
+                      <MessageCircle className="w-3.5 h-3.5 text-sky-500" />
                       <span>{photo.comments.length} comments</span>
                     </div>
                   </div>
