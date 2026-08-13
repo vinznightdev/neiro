@@ -1,0 +1,6 @@
+{
+  "name": "NEIRO Haven",
+  "description": "An interactive, street-spirited playground celebrating NEIRO on Robinhood Chain. Features real-time price charts, tokenomics, step-by-step onboarding, a virtual dress-up stylist, synthesized barking, and a tail-wagging cursor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
