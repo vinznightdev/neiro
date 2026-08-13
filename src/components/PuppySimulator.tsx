@@ -150,10 +150,10 @@ export default function PuppySimulator() {
   }, [floatHearts]);
 
   return (
-    <div className="bg-white dark:bg-indigo-950/30 border border-orange-100 dark:border-indigo-900/40 rounded-3xl p-6 lg:p-8 shadow-sm flex flex-col xl:flex-row gap-8">
+    <div className="bg-white dark:bg-indigo-950/70 border border-orange-100 dark:border-indigo-900/40 rounded-3xl p-6 lg:p-8 shadow-sm flex flex-col xl:flex-row gap-8">
       
       {/* 1. Interactive Visual Panel */}
-      <div className="flex-1 flex flex-col items-center justify-center bg-orange-50/50 dark:bg-slate-950/40 rounded-2xl p-6 relative overflow-hidden min-h-[350px]">
+      <div className="flex-1 flex flex-col items-center justify-center bg-orange-50/50 dark:bg-slate-950/75 rounded-2xl p-6 relative overflow-hidden min-h-[350px]">
         
         {/* Sky / Floating Particles */}
         <div className="absolute inset-0 pointer-events-none">
@@ -622,7 +622,7 @@ export default function PuppySimulator() {
         {/* Vital Stats */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           {/* Happiness */}
-          <div className="bg-orange-50/45 dark:bg-indigo-950/20 p-3 rounded-2xl border border-orange-100/50 dark:border-indigo-900/20">
+          <div className="bg-orange-50/45 dark:bg-indigo-950/60 p-3 rounded-2xl border border-orange-100/50 dark:border-indigo-900/20">
             <div className="flex justify-between items-center text-xs mb-1.5 font-black text-slate-800 dark:text-indigo-100">
               <span className="flex items-center gap-1">💖 Love</span>
               <span>{pet.happiness}%</span>
@@ -636,7 +636,7 @@ export default function PuppySimulator() {
           </div>
 
           {/* Hunger */}
-          <div className="bg-orange-50/45 dark:bg-indigo-950/20 p-3 rounded-2xl border border-orange-100/50 dark:border-indigo-900/20">
+          <div className="bg-orange-50/45 dark:bg-indigo-950/60 p-3 rounded-2xl border border-orange-100/50 dark:border-indigo-900/20">
             <div className="flex justify-between items-center text-xs mb-1.5 font-black text-slate-800 dark:text-indigo-100">
               <span className="flex items-center gap-1">🍪 Full</span>
               <span>{100 - pet.hunger}%</span>
@@ -650,7 +650,7 @@ export default function PuppySimulator() {
           </div>
 
           {/* Energy */}
-          <div className="bg-orange-50/45 dark:bg-indigo-950/20 p-3 rounded-2xl border border-orange-100/50 dark:border-indigo-900/20">
+          <div className="bg-orange-50/45 dark:bg-indigo-950/60 p-3 rounded-2xl border border-orange-100/50 dark:border-indigo-900/20">
             <div className="flex justify-between items-center text-xs mb-1.5 font-black text-slate-800 dark:text-indigo-100">
               <span className="flex items-center gap-1">⚡ Energy</span>
               <span>{pet.energy}%</span>

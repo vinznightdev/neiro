@@ -18,7 +18,7 @@ interface Trade {
 
 export default function DexscreenerChart() {
   return (
-    <div className="bg-white dark:bg-indigo-950/30 border border-orange-100 dark:border-indigo-900/40 rounded-3xl p-5 lg:p-6 shadow-sm flex flex-col space-y-4">
+    <div className="bg-white dark:bg-indigo-950/70 border border-orange-100 dark:border-indigo-900/40 rounded-3xl p-5 lg:p-6 shadow-sm flex flex-col space-y-4">
       {/* Chart Title / Dexscreener Meta */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
         <div className="flex items-center gap-2.5">

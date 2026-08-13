@@ -185,14 +185,19 @@ export default function App() {
           {/* Logo */}
           <div 
             onClick={handleQuickBark}
-            className="flex items-center gap-2 cursor-pointer group"
+            className="flex items-center gap-2.5 cursor-pointer group"
           >
             <motion.div
-              whileHover={{ rotate: [0, -15, 15, -15, 0] }}
+              whileHover={{ rotate: [0, -15, 15, -15, 0], scale: 1.1 }}
               transition={{ duration: 0.4 }}
-              className="text-amber-500 dark:text-violet-400 text-2xl"
+              className="w-9 h-9 rounded-full overflow-hidden border-2 border-amber-500/40 dark:border-violet-500/40 flex items-center justify-center bg-white shadow-sm"
             >
-              🐕
+              <img 
+                src="https://www.image2url.com/r2/default/images/1786629622757-becd828a-8ce0-41e7-862a-e5c4176d9f56.jpg" 
+                alt="NEIRO Logo" 
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
             </motion.div>
             <div>
               <span className="font-black text-xl tracking-tight bg-gradient-to-r from-amber-600 to-orange-500 dark:from-violet-400 dark:to-indigo-300 bg-clip-text text-transparent">
@@ -264,7 +269,7 @@ export default function App() {
         {/* Official Banner Image */}
         <div className="w-full rounded-3xl overflow-hidden border border-orange-100/40 dark:border-indigo-950/40 shadow-sm relative aspect-[21/9] sm:aspect-[21/7] lg:aspect-[21/5]">
           <img
-            src="https://sf4service.site/raw/img_e8ttxc099.jpg"
+            src="https://www.image2url.com/r2/default/images/1786629561543-ed9a8ff2-94a2-4759-ae95-ad27b430e755.jpg"
             alt="NEIRO Official Banner"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover"
@@ -272,7 +277,7 @@ export default function App() {
         </div>
 
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-orange-100/35 via-orange-50/20 to-transparent dark:from-indigo-950/15 dark:to-transparent rounded-3xl p-6 sm:p-8 lg:p-12 border border-orange-100/40 dark:border-indigo-950/20 flex flex-col lg:flex-row gap-8 items-center">
+        <section className="bg-gradient-to-br from-orange-100/35 via-orange-50/20 to-transparent dark:from-indigo-950/55 dark:via-indigo-950/20 dark:to-transparent rounded-3xl p-6 sm:p-8 lg:p-12 border border-orange-100/40 dark:border-indigo-950/30 flex flex-col lg:flex-row gap-8 items-center">
           
           {/* Main Visual Frame */}
           <div className="lg:w-5/12 flex justify-center relative w-full">
@@ -287,7 +292,7 @@ export default function App() {
               className="relative rounded-3xl overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl max-w-sm w-full"
             >
               <img
-                src="https://sf4service.site/raw/img_b7q5maia9.jpg"
+                src="https://www.image2url.com/r2/default/images/1786629622757-becd828a-8ce0-41e7-862a-e5c4176d9f56.jpg"
                 alt="Neiro the street leader in golden hoodie"
                 referrerPolicy="no-referrer"
                 className="w-full object-cover aspect-square"

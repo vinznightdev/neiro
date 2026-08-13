@@ -11,36 +11,36 @@ import { PhotoItem, CommentItem } from '../types';
 const INITIAL_PHOTOS: PhotoItem[] = [
   {
     id: 'original-puppy',
-    url: 'https://sf4service.site/raw/img_b7q5maia9.jpg',
-    title: 'Cozy Mustard Hoodie Buddy',
-    description: 'The legendary little puppy wearing a stylish mustard yellow hoodie, striking a sweet model-like pose. Absolute perfection.',
+    url: 'https://www.image2url.com/r2/default/images/1786629568531-68a297a0-35bd-4d59-ac6e-a3878286e672.jpg',
+    title: 'Street-Built Legend',
+    description: 'The legendary NEIRO puppy standing proud as a true street model, representing strength, resilience, and unity.',
     category: 'hoodie',
     likes: 1240,
     comments: [
-      { id: 'c1', author: 'Bella', text: 'This yellow hoodie fits him so perfectly! I cannot handle the cuteness!', timestamp: 'Just now' },
-      { id: 'c2', author: 'Daisy', text: 'An absolute icon of dog fashion 🐾💛', timestamp: '2 hours ago' }
+      { id: 'c1', author: 'Bella', text: 'Absolute perfection! This look represents the street vibe perfectly! 🐾🔥', timestamp: 'Just now' },
+      { id: 'c2', author: 'Daisy', text: 'An absolute icon of community fashion!', timestamp: '2 hours ago' }
     ]
   },
   {
     id: 'sweet-hooded-explorer',
-    url: 'https://sf4service.site/raw/img_gvmtvnmsa.jpg',
-    title: 'Sweet Hooded Explorer',
-    description: 'An adorable fluffy puppy snugly dressed in a gorgeous pink hoodie, ready for warm cuddles and cute little walks.',
+    url: 'https://www.image2url.com/r2/default/images/1786629556885-7efa1516-46bb-422d-bd91-63991596299d.jpg',
+    title: 'Urban Cozy Companion',
+    description: 'An adorable fluffy NEIRO companion looking exceptionally charming and cozy, ready to conquer the streets.',
     category: 'hoodie',
     likes: 1042,
     comments: [
-      { id: 'c3', author: 'Daisy', text: 'This hoodie look is too beautiful for words! 😍', timestamp: '3 hours ago' }
+      { id: 'c3', author: 'Daisy', text: 'This design look is too beautiful for words! 😍', timestamp: '3 hours ago' }
     ]
   },
   {
     id: 'pajama-naptime-pup',
-    url: 'https://sf4service.site/raw/img_iu44rbkhq.jpg',
-    title: 'Pajama Naptime Pup',
-    description: 'A quiet, peaceful puppy wrapped up comfortably, dreaming of fields of flowers and yummy treats.',
+    url: 'https://www.image2url.com/r2/default/images/1786629622757-becd828a-8ce0-41e7-862a-e5c4176d9f56.jpg',
+    title: 'Official NEIRO Emblem',
+    description: 'Our high-contrast official seal, depicting the ultimate digital puppy portrait with pure warmth.',
     category: 'sleepy',
     likes: 1180,
     comments: [
-      { id: 'c4', author: 'Leo', text: 'Sleeping like an absolute angel. Sleep tight! 💤', timestamp: '5 hours ago' }
+      { id: 'c4', author: 'Leo', text: 'Pure golden emblem quality. Truly magnificent!', timestamp: '5 hours ago' }
     ]
   }
 ];
@@ -56,7 +56,7 @@ export default function InteractiveGallery() {
 
   // Local storage synchronization
   useEffect(() => {
-    const saved = localStorage.getItem('puppy_haven_gallery_v3');
+    const saved = localStorage.getItem('puppy_haven_gallery_v4');
     if (saved) {
       try {
         setPhotos(JSON.parse(saved));
@@ -70,7 +70,7 @@ export default function InteractiveGallery() {
 
   const saveToStorage = (updatedPhotos: PhotoItem[]) => {
     setPhotos(updatedPhotos);
-    localStorage.setItem('puppy_haven_gallery_v3', JSON.stringify(updatedPhotos));
+    localStorage.setItem('puppy_haven_gallery_v4', JSON.stringify(updatedPhotos));
   };
 
   const handleLike = (id: string, e?: React.MouseEvent) => {
@@ -173,7 +173,7 @@ export default function InteractiveGallery() {
                 whileHover={{ y: -8, transition: { duration: 0.2 } }}
                 id={`puppy-card-${photo.id}`}
                 onClick={() => setActivePhotoIndex(index)}
-                className="group bg-white dark:bg-indigo-950/30 rounded-2xl overflow-hidden border border-orange-100 dark:border-indigo-900/30 shadow-sm hover:shadow-xl hover:border-amber-200 dark:hover:border-violet-800/40 transition-all cursor-pointer flex flex-col"
+                className="group bg-white dark:bg-indigo-950/70 rounded-2xl overflow-hidden border border-orange-100 dark:border-indigo-900/30 shadow-sm hover:shadow-xl hover:border-amber-200 dark:hover:border-violet-800/40 transition-all cursor-pointer flex flex-col"
               >
                 {/* Image Container */}
                 <div className="relative aspect-square overflow-hidden bg-orange-50 dark:bg-slate-900">
